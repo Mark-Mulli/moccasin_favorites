@@ -20,7 +20,7 @@ version: public(constant(uint256)) = 4
 def __init__(_decimals: uint8, _initialAnswer: int256):
     DECIMALS = _decimals
     self.updateAnswer(_initialAnswer)
-    print("HELLO")
+
 
 
 @internal
