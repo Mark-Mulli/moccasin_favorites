@@ -66,3 +66,6 @@ def test_multiple_funders_withdrawal(coffee, account):
     # Check that all funder balances are reset to 0
     for funder in funders:
         assert coffee.funder_to_amount_funded(funder) == 0
+
+def test_get_eth_to_usd(coffee):
+    assert coffee.get_eth_to_usd(SEND_VALUE) > 0
