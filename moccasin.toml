@@ -5,18 +5,18 @@ src = "src"
 deployer_script = "script/deploy_mocks.py"
 abi = "mock_V3_aggregator"
 
-[networks.sepolia]
-url = "$SEPOLIA_RPC_URL"
-save_to_db = false
-prompt_live = false
-# default_account_name = "buildBear"
-explorer_uri = "https://eth-sepolia.blockscout.com/"
-explorer_type = "blockscout"
 
 # [networks.pyevm.contracts.price_feed]
 # deployer_script = "script/deploy_mocks.py"
+[networks.buildBear]
+url = "$BUILDBEAR_RPC_URL"
+prompt_live = false
+save_to_db = false
+default_account_name = "buildBear"
 
-[networks.sepolia.contracts.price_feed]
+[networks.buildBear.contracts.price_feed]
 address = "0x694AA1769357215DE4FAC081bf1f309aDC325306"
+
+
 
 # You can view all configuration options at https://cyfrin.github.io/moccasin/all_moccasin_toml_parameters.html
